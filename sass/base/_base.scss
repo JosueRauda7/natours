@@ -10,8 +10,15 @@ html {
   /* 10px/16px = 0.625 */
   // Define lo que 1rem que es
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
